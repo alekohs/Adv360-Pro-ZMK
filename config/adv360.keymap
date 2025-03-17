@@ -79,7 +79,7 @@
         };
 
         rectangle {
-            display-name = "Rectangle";
+            display-name = "Red";
             bindings = <
 &none  &none            &none            &none            &none  &none  &none                                       &none   &none  &none  &none  &none   &none   &none
 &none  &none            &kp LA(LC(UP))    &none            &none  &none  &none                                       &none   &none  &none  &none  &none   &none   &none
