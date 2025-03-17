@@ -82,7 +82,7 @@
             display-name = "Rectangle";
             bindings = <
 &trans  &trans  &trans       &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &kp LA(LCA(UP))&trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &kp LA(LC(UP))&trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &kp LA(LC(LEFT))     &kp LA(LC(DOWN))&kp LA(LC(RIGHT)) &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &kp LA(LC(Z))     &kp LA(LC(X))&kp LA(LC(C)) &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans       &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
