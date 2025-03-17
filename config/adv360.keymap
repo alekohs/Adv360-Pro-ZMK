@@ -40,20 +40,20 @@ hm: homerow_mods {
             bindings = <
                 &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
                 &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-                &kp ESC   &rpi LCTRL A     &rpi LALT S    &rpi LGUI D    &rpi LSHIFT F      &kp G  &none           &kp LCTRL &kp LGUI &kp RGUI  &kp LALT           &none &kp H  &rpi RSHIFT J  &rpi RGUI K     &rpi RALT L    &rpi RCTRL SEMI &kp SQT
+                &kp ESC   &rpi LCTRL A     &rpi LALT S    &rpi LGUI D    &rpi LSHIFT F      &kp G  &none           &kp LCTRL &kp LGUI &kp RGUI  &kp LALT           &LA(LC(SPACE)) &kp H  &rpi RSHIFT J  &rpi RGUI K     &rpi RALT L    &rpi RCTRL SEMI &kp SQT
                 &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC &kp END  &kp PG_DN &kp DEL &kp ENTER              &kp UP &kp DOWN  &kp LBKT &kp RBKT &kp ESC 
+                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC &kp END  &kp PG_DN &kp DEL &kp ENTER              &kp UP &kp DOWN  &kp LBKT &kp RBKT &kp ESC
             >;
         };
 
-        keypad {
-            display-name = "Kp";
+        clean {
+            display-name = "Clean";
             bindings = <
-                &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-                &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-                &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LGUI &kp RGUI &kp LALT           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-                &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC &kp END  &kp PG_DN &kp DEL &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &kp ESC
+                &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &trans &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+                &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &trans                                                           &trans &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+                &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &trans           &LCTRL &kp LGUI &kp RGUI &kp LALT           &trans &kp H  &kp J  &kp K    &kp L     &kp SEMI     &kp SQT
+                &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA    &kp DOT    &kp FSLH    &kp RSHFT
+                &trans     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC &kp END  &kp PG_DN &kp DEL &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &kp ESC
             >;
         };
 
@@ -78,23 +78,23 @@ hm: homerow_mods {
                 &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
             >;
         };
-        extra1 { 
-        display-name = "Red";    
+        extra1 {
+        display-name = "Red";
         status = "reserved";
         };
 
-        extra2 { 
-        display-name = "Purple";    
+        extra2 {
+        display-name = "Purple";
         status = "reserved";
         };
 
-        extra3 { 
-        display-name = "Cyan";    
+        extra3 {
+        display-name = "Cyan";
         status = "reserved";
         };
 
-        extra4 { 
-        display-name = "Yellow";    
+        extra4 {
+        display-name = "Yellow";
         status = "reserved";
         };
     };
