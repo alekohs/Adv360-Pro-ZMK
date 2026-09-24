@@ -222,3 +222,59 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+  dk_acute: dk_acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp SQT>;
+    display-name = "Dead Acute";
+  };
+
+  dk_grave: dk_grave {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp GRAVE>;
+    display-name = "Dead Grave";
+  };
+
+  dk_circ: dk_circ {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp CARET>;
+    display-name = "Dead Circumflex";
+  };
+
+  dk_uml: dk_uml {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp DQT>;
+    display-name = "Dead Umlaut";
+  };
+
+  dk_tilde: dk_tilde {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp TILDE>;
+    display-name = "Dead Tilde";
+  };
+
+  dk_cedil: dk_cedil {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp COMMA>;
+    display-name = "Dead Cedilla";
+  };
+
+  acute: acute {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp SQT &kp SQT>;
+    display-name = "Acute";
+  };
+
+  diaeresis: diaeresis {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp K_APP &kp DQT &kp DQT>;
+    display-name = "Diaeresis";
+  };

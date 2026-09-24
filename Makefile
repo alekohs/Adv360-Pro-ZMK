@@ -9,7 +9,7 @@ SELINUX1 := :z
 SELINUX2 := ,z
 endif
 
-.PHONY: all left clean_firmware clean_image clean
+.PHONY: all left package clean_firmware clean_image clean
 
 all:
 	$(shell bin/get_version_local.sh clique >> /dev/null)
@@ -34,6 +34,12 @@ left:
 		-e BUILD_RIGHT=false \
 		zmk
 	git checkout config/version.dtsi
+
+package: all
+	rm -rf dist && mkdir dist
+	cp firmware/$(TIMESTAMP)-$(COMMIT)-left-clique.uf2 dist/left.uf2
+	cp firmware/$(TIMESTAMP)-$(COMMIT)-right-clique.uf2 dist/right.uf2
+	cp settings-reset.uf2 dist/
 
 clean_firmware:
 	rm -f firmware/*.uf2
